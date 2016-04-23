@@ -1,11 +1,16 @@
-/*=========================== ОБЩИЕ СТИЛИ ===========================*/
+/*=========================== 
+ОБЩИЕ СТИЛИ 
+===========================*/
 
-body {
+.page {
   color: #fff;
   font-weight: normal;
   font-size: 16px;
   font-family: "Roboto", Arial, sans-serif;
   line-height: 22px;
+  background-color: #849d8f;
+  margin: 10px 0;
+  padding: 0;
 }
 
 h1 {
@@ -24,3 +29,298 @@ h2 {
   line-height: 41px;
 }
 
+.page__main-head {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================== 
+ШАПКА
+===========================*/
+
+.main-head {
+  width: 1150px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.main-head--clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.main-head__logo {
+  float: left;
+  width: 154px;
+  height: 64px;
+  margin-left: -1px;
+}
+
+
+
+
+
+/*=============
+==============*/
+
+.main-nav {
+  float: left;
+  width: 410px;
+  min-height: 64px;
+}
+
+.main-nav__list {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.main-nav__item {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  margin-top: 19px;
+}
+
+.main-nav__item--1 {
+  position: relative;
+}
+
+.main-nav__link {
+  position: relative;
+  margin-right: 4px;
+  padding: 10px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: 11px;
+  right: 9px;
+  left: 9px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-nav__link:hover {
+  background-color: #f7f6f3;
+  color: #333333;
+}
+
+.main-nav__submenu-list {
+  display: none;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item--1:hover .main-nav__submenu-list {
+  display: block;
+  position: absolute;
+  clear: both;
+}
+
+.main-nav__submenu-item {
+  
+}
+
+.main-nav__submenu-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+
+/*=============
+==============*/
+
+.main-head__user-menu {
+  min-height: 75px;
+  float: right;
+  width: 262px;
+  margin-top: 14px;
+}
+
+
+
+.user-menu {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+
+.user-menu__search {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+}
+
+.search {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.search__btn {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50px;
+  background: #9db1a5 url(../img/search-icon.png) no-repeat 9px 7px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.search__btn:hover {
+  background: #f8f7f4 url(../img/search-black-icon.png) no-repeat 9px 7px;
+  color: #323232;
+}
+
+.search__popup {
+  display: none;
+  position: absolute;
+}
+
+.search:hover .search__popup {
+  display: block;
+  position: absolute;
+  clear: both;
+}
+
+.search__form {
+  
+}
+
+.search__input {
+  
+}
+
+
+
+.user-menu__login {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+}
+
+.login {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.login__btn {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 48px;
+  height: 24px;
+  border-radius: 50px;
+  padding-top: 8px;
+  padding-left: 44px;
+  background: #9db1a5 url(../img/login-icon.png) no-repeat 18px 6px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.login__btn:hover {
+  background: #f8f7f4 url(../img/login-black-icon.png) no-repeat 18px 6px;
+  color: #323232;
+}
+
+.login__popup {
+  display: none;
+  position: absolute;
+}
+
+.login:hover .login__popup {
+  display: block;
+  position: absolute;
+  clear: both;
+}
+
+
+.login__form {
+  
+}
+
+.login__email {
+  
+}
+
+.login__password {
+  
+}
+
+.login__submit {
+  
+}
+
+.login__links {
+  
+}
+
+
+
+.user-menu__cart {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart__link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 72px;
+  height: 24px;
+  border-radius: 50px;
+  padding-top: 8px;
+  padding-left: 45px;
+  background: #9db1a5 url(../img/cart-icon.png) no-repeat 18px 6px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+
+.contacts-brief {
+  width: 170px;
+  float: right;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  padding-top: 7px;
+}
+
+.contacts-brief span {
+  font-size: 22px;
+  line-height: 34px;
+}
