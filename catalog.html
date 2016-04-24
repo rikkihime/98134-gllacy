@@ -143,251 +143,258 @@
     </div>
     
     
-    <main class="catalog-content">
-      
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="#">Каталог</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <span>Сливочное</span>
-        </li>
-      </ul>
+    
+    <div class="page__main-content">
       
       
-      <h1 class="catalog-content__title">Сливочное мороженое</h1>
-      
-      <section class="sorting">
-      
-        <form action="/echo" method="post">
-          
-          <div class="sorting__select">
-            <h4>Сортировка:</h4>
-            <select name="sort-select" id="sort-select">
-              <option value="pops" selected>по популярности</option>
-              <option value="cheap">сначала недорогие</option>
-              <option value="expensive">сначала дорогие</option>
-              <option value="fat">по жирности</option>
-            </select>
-          </div>
-          
-          <div class="sorting__price">
-            <h4>Цена:
-              <input class="sorting__price-min" type="text" name="price-min" value="100 руб."> – 
-              <input class="sorting__price-min" type="text" name="price-max" value="500 руб.">
-            </h4>
-            <div class="sorting__price-controls">
-              <div class="sorting__price-scale">
-                <div class="sorting__price-bar"></div>
-              </div>
-              <div class="sorting__price-toggle  sorting__price-toggle--min"></div>
-              <div class="sorting__price-toggle  sorting__price-toggle--max"></div>
-            </div>
-          </div>
-          
-          <div class="sorting__fat">
-            <h4>Жирность:</h4>
-            <div class="sorting__fat-radio">
-              <input type="radio" id="fat-radio-1" name="fat-radio" value="0-proc">
-              <label for="fat-radio-1">0%</label>
-              
-              <input type="radio" id="fat-radio-2" name="fat-radio" value="10max-proc" checked>
-              <label for="fat-radio-2">до 10%</label>
-              
-              <input type="radio" id="fat-radio-3" name="fat-radio" value="30max-proc">
-              <label for="fat-radio-3">до 30%</label>
-              
-              <input type="radio" id="fat-radio-4" name="fat-radio" value="30min-proc">
-              <label for="fat-radio-4">выше 30%</label>
-            </div>
-          </div>
-          
-          <div class="sorting__check">
-            <h4>Наполнители:</h4>
-            <div class="sorting__check-items">
-              <input type="checkbox" id="ch-1" name="check" value="check1" checked>
-              <label for="ch-1">шоколадные</label>
+      <main class="catalog-content">
 
-              <input type="checkbox" id="ch-2" name="check" value="check2" checked>
-              <label for="ch-2">сахарные присыпки</label>
-
-              <input type="checkbox" id="ch-3" name="check" value="check3">
-              <label for="ch-3">фрукты</label>
-
-              <input type="checkbox" id="ch-4" name="check" value="check4">
-              <label for="ch-4">сиропы</label>
-
-              <input type="checkbox" id="ch-5" name="check" value="check5">
-              <label for="ch-5">джемы</label>
-            </div>
-          </div>
-          
-          <input class="sorting__btn" type="submit" value="Применить">
-          
-        </form>
-        
-      </section>
-      
-      
-      <section class="catalog">
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-01.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            310<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
-          </a>
-        </article>
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-02.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            380<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочно-кофейное с кусочками шоколада</h4>
-          </a>
-        </article>
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-03.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            355<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочно-клубничное с присыпкой из белого шоколада</h4>
-          </a>
-        </article>
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-04.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            415<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочное крем-брюле с карамельной подливкой</h4>
-          </a>
-        </article>
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-05.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            325<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочное с брусничным джемом</h4>
-          </a>
-        </article>
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-06.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            410<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочно-черничное с цельными ягодами черники</h4>
-          </a>
-        </article>
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-07.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            375<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочно-лимонное с карамельной присыпкой</h4>
-          </a>
-        </article>
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-08.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            320<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочное с шоколадной стружкой</h4>
-          </a>
-        </article>
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-09.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            440<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочно-ванильное с кусочками шоколада</h4>
-          </a>
-        </article>
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-10.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            435<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочноe с ментоловым сиропом</h4>
-          </a>
-        </article>
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-11.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            355<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочное с кусочками черного шоколада</h4>
-          </a>
-        </article>
-        
-        <article class="product">
-          <img class="product__icecream-pic" src="img/product-12.jpg" alt="Мороженное" width="267" height="267">
-          <div class="product__price">
-            420<span class="product__price-ru-icon">/кг</span>
-          </div>
-          <a class="product__name" href="#">
-            <h4>Сливочное с мятным сиропом</h4>
-          </a>
-        </article>
-        
-      </section>
-      
-      
-      <section class="pagination">
-        
-        <ul class="pagination__list">
-          <li class="pagination__item">
-            <a class="pagination__link  pagination__link-prev--disabled" href="#">Предыдущая</a>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="index.html">Главная</a>
           </li>
-          <li class="pagination__item">
-            <a class="pagination__link  pagination__link--current" href="#">1</a>
+          <li class="breadcrumbs__item">
+            <a href="#">Каталог</a>
           </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">2</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">3</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">4</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">5</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link-next" href="#">Следующая</a>
+          <li class="breadcrumbs__item">
+            <span>Сливочное</span>
           </li>
         </ul>
-        
-      </section>
+
+
+        <h1 class="catalog-content__title">Сливочное мороженое</h1>
+
+        <section class="sorting">
+
+          <form action="/echo" method="post">
+
+            <div class="sorting__select">
+              <h4>Сортировка:</h4>
+              <select name="sort-select" id="sort-select">
+                <option value="pops" selected>по популярности</option>
+                <option value="cheap">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+            </div>
+
+            <div class="sorting__price">
+              <h4>Цена:
+                <input class="sorting__price-min" type="text" name="price-min" value="100 руб."> – 
+                <input class="sorting__price-min" type="text" name="price-max" value="500 руб.">
+              </h4>
+              <div class="sorting__price-controls">
+                <div class="sorting__price-scale">
+                  <div class="sorting__price-bar"></div>
+                </div>
+                <div class="sorting__price-toggle  sorting__price-toggle--min"></div>
+                <div class="sorting__price-toggle  sorting__price-toggle--max"></div>
+              </div>
+            </div>
+
+            <div class="sorting__fat">
+              <h4>Жирность:</h4>
+              <div class="sorting__fat-radio">
+                <input type="radio" id="fat-radio-1" name="fat-radio" value="0-proc">
+                <label for="fat-radio-1">0%</label>
+
+                <input type="radio" id="fat-radio-2" name="fat-radio" value="10max-proc" checked>
+                <label for="fat-radio-2">до 10%</label>
+
+                <input type="radio" id="fat-radio-3" name="fat-radio" value="30max-proc">
+                <label for="fat-radio-3">до 30%</label>
+
+                <input type="radio" id="fat-radio-4" name="fat-radio" value="30min-proc">
+                <label for="fat-radio-4">выше 30%</label>
+              </div>
+            </div>
+
+            <div class="sorting__check">
+              <h4>Наполнители:</h4>
+              <div class="sorting__check-items">
+                <input type="checkbox" id="ch-1" name="check" value="check1" checked>
+                <label for="ch-1">шоколадные</label>
+
+                <input type="checkbox" id="ch-2" name="check" value="check2" checked>
+                <label for="ch-2">сахарные присыпки</label>
+
+                <input type="checkbox" id="ch-3" name="check" value="check3">
+                <label for="ch-3">фрукты</label>
+
+                <input type="checkbox" id="ch-4" name="check" value="check4">
+                <label for="ch-4">сиропы</label>
+
+                <input type="checkbox" id="ch-5" name="check" value="check5">
+                <label for="ch-5">джемы</label>
+              </div>
+            </div>
+
+            <input class="sorting__btn" type="submit" value="Применить">
+
+          </form>
+
+        </section>
+
+
+        <section class="catalog">
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-01.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              310<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
+            </a>
+          </article>
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-02.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              380<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочно-кофейное с кусочками шоколада</h4>
+            </a>
+          </article>
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-03.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              355<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочно-клубничное с присыпкой из белого шоколада</h4>
+            </a>
+          </article>
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-04.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              415<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочное крем-брюле с карамельной подливкой</h4>
+            </a>
+          </article>
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-05.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              325<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочное с брусничным джемом</h4>
+            </a>
+          </article>
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-06.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              410<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочно-черничное с цельными ягодами черники</h4>
+            </a>
+          </article>
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-07.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              375<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочно-лимонное с карамельной присыпкой</h4>
+            </a>
+          </article>
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-08.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              320<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочное с шоколадной стружкой</h4>
+            </a>
+          </article>
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-09.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              440<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочно-ванильное с кусочками шоколада</h4>
+            </a>
+          </article>
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-10.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              435<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочноe с ментоловым сиропом</h4>
+            </a>
+          </article>
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-11.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              355<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочное с кусочками черного шоколада</h4>
+            </a>
+          </article>
+
+          <article class="product">
+            <img class="product__icecream-pic" src="img/product-12.jpg" alt="Мороженное" width="267" height="267">
+            <div class="product__price">
+              420<span class="product__price-ru-icon">/кг</span>
+            </div>
+            <a class="product__name" href="#">
+              <h4>Сливочное с мятным сиропом</h4>
+            </a>
+          </article>
+
+        </section>
+
+
+        <section class="pagination">
+
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a class="pagination__link  pagination__link-prev--disabled" href="#">Предыдущая</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link  pagination__link--current" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">5</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link-next" href="#">Следующая</a>
+            </li>
+          </ul>
+
+        </section>
+
+        <hr class="catalog-content__line">
+
+      </main>
       
-      <hr class="catalog-content__line">
       
-    </main>
+    </div>
     
     
     
