@@ -49,9 +49,10 @@ h2 {
 ===========================*/
 
 .main-head {
-  width: 1150px;
+  width: 1146px;
   margin: 0 auto;
-  padding: 0 25px;
+  margin-bottom: 20px;
+  padding: 0 27px;
 }
 
 .main-head--clearfix::after {
@@ -64,7 +65,7 @@ h2 {
   float: left;
   width: 154px;
   height: 64px;
-  margin-left: -1px;
+  margin-left: -6px;
 }
 
 
@@ -108,6 +109,7 @@ h2 {
   text-decoration: none;
   font-size: 16px;
   line-height: 18px;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .main-nav__link::before {
@@ -193,6 +195,7 @@ h2 {
   background: #9db1a5 url(../img/search-icon.png) no-repeat 9px 7px;
   font-size: 14px;
   line-height: 16px;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .search__btn:hover {
@@ -245,6 +248,7 @@ h2 {
   background: #9db1a5 url(../img/login-icon.png) no-repeat 18px 6px;
   font-size: 14px;
   line-height: 16px;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .login__btn:hover {
@@ -315,14 +319,19 @@ h2 {
   width: 170px;
   float: right;
   font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
   line-height: 16px;
   text-align: right;
   padding-top: 7px;
+  font-weight: 500;
+  font-weight: 600;
 }
 
 .contacts-brief span {
   font-size: 22px;
   line-height: 34px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 
@@ -339,9 +348,9 @@ h2 {
 
 
 .page__main-content {
-  width: 1150px;
-  margin: 0 auto;
-  padding: 0 25px;
+/*  width: 1150px;*/
+/*  margin: 0 auto;*/
+/*  padding: 0 25px;*/
 }
 
 
@@ -353,15 +362,15 @@ h2 {
 
 .slider {
   width: 1146px;
-  min-height: 880px;
-/*  position: relative;*/
-  margin: -125px auto;
-  padding-top: 3px;
+  min-height: 470px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0 27px;
 }
 
 .slider__item {
   width: 1146px;
-  min-height: 880px;
+  min-height: 470px;
   position: relative;
   margin: 0 auto;
 }
@@ -374,36 +383,38 @@ h2 {
   line-height: 60px;
   width: 680px;
   text-align: center;
-/*  padding-top: 270px;*/
-/*  padding-left: 238px;*/
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 391px;
-  left: 237px; 
+  top: 249px;
+  left: 233px; 
+  display: inline-block;
+  vertical-align: top;
 }
 
 .slider__btn {
   text-decoration: none;
   color: #fff;
   font-size: 32px;
+  font-family: "Roboto", Arial, sans-serif;
   line-height: 44px;
   font-weight: 500;
-  text-shadow: 0 3px 7px #a73824;
+  text-shadow: 0 3px 7px #c73f25;
   position: absolute;
-  top: 542px;
-  left: 438px;
+  top: 400px;
+  left: 434px;
   padding: 8px 40px;
   padding-bottom: 12px;
   border-radius: 50px;
   box-shadow: 0 2px 3px 0 #ab5948;
   background: #ec583c;
   background: linear-gradient(to bottom, #f16743, #e74b36);
+/*  margin-bottom: 20px;*/
 }
 
 .slider__item--1 {
-  background: url(../img/bg-slide-1.png) no-repeat top;
-  display: none;
+/*  background: url(../img/bg-slide-1.png) no-repeat top;*/
+/*  display: none;*/
 }
 
 .slider__item--2 {
@@ -413,5 +424,196 @@ h2 {
 
 .slider__item--3 {
   background: url(../img/bg-slide-3.png) no-repeat top;
-/*  display: none;*/
+  display: none;
+}
+
+
+
+.slider__toggle {
+  position: absolute;
+  top: 565px;
+}
+
+.slide-toggle {
+  
+}
+
+
+
+
+
+/*=============
+==============*/
+
+.banners {
+  width: 1146px;
+  min-height: 230px;
+  margin: 0 auto;
+  margin-top: 34px;
+  margin-bottom: 20px;
+  padding: 0 27px;
+}
+
+.banners__btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  text-shadow: 0 3px 7px #e9543a;
+  position: absolute;
+  top: 160px;
+  right: 20px;
+  padding: 10px 23px;
+  padding-bottom: 12px;
+  border-radius: 50px;
+  box-shadow: 0 2px 3px 0 #ab5948;
+  background: #ec583c;
+  background: linear-gradient(to bottom, #f16743, #e74b36);
+
+}
+
+.banners__block-1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 560px;
+  margin-right: 22px;
+  min-height: 230px;
+  position: relative;
+  background: url(../img/banners-raspberry.jpg) no-repeat;
+  border-radius: 10px;
+}
+
+.banners__block-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 560px;
+  min-height: 230px;
+  position: relative;
+  background: url(../img/banners-chocolate.jpg) no-repeat;
+  border-radius: 10px;
+}
+
+.banners__block-1 h2,
+.banners__block-2 h2 {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 19px;
+  display: block;
+  color: #fff;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 600;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.banners__block-1 p,
+.banners__block-2 p {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 19px;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================== 
+ПРОМО
+===========================*/
+
+.promo {
+  width: 1146px;
+  min-height: 330px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  padding: 0 27px;
+}
+
+
+
+
+
+/*=============
+==============*/
+
+.product {
+  display: inline-block;
+  vertical-align: top;
+  width: 267px;
+  margin-right: 22px;
+  position: relative;
+}
+
+.product:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.product__hit-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product__icecream-pic {
+  border-radius: 50%;
+}
+
+.product__price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  position: absolute;
+  top: 208px;
+  left: 0;
+}
+
+.product__price-ru-icon {
+  position: absolute;
+  top: 6px;
+  left: 80px;
+}
+
+.product__price-kg {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  padding-left: 35px;
+}
+
+.product__name,
+.product__name h4 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-top: 6px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.product__name h4 {
+  display: inline;
+  border-bottom: 1px solid rgba(230, 230, 235, 0.3);
 }
