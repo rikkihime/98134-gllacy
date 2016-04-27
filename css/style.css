@@ -878,7 +878,7 @@ h2 {
   width: 1146px;
   min-height: 430px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 0 27px;
   position: relative;
 }
@@ -956,4 +956,175 @@ h2 {
   font-family: "Roboto", Arial, sans-serif;
   line-height: 24px;
   display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================== 
+ФУТЕР
+===========================*/
+
+.main-footer {
+  width: 1146px;
+  min-height: 53px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0 27px;
+}
+
+
+
+
+/*=============
+==============*/
+
+.social {
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 50px;
+}
+
+.social__btn {
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  border: 3px solid #c2cec7;
+  margin-top: 21px;
+  margin-right: 9px;
+}
+
+.social__btn--twitter {
+  background: url(../img/social-twitter-icon.png) no-repeat center;
+}
+
+.social__btn--insta {
+  background: url(../img/social-insta-icon.png) no-repeat center;
+}
+
+.social__btn--fb {
+  background: url(../img/social-fb-icon.png) no-repeat center;
+}
+
+.social__btn--vk {
+  background: url(../img/social-vk-icon.png) no-repeat center;
+}
+
+
+
+
+
+/*=============
+==============*/
+
+.more-info {
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  background: url(../img/heart-icon.png) no-repeat 2px 9px;
+  margin-top: 12px;
+  margin-left: 151px;
+}
+
+.more-info table {
+  
+}
+
+.more-info__items {
+  padding-left: 22px;
+  padding-right: 7px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+}
+
+.more-info__item {
+  font-weight: 400;
+  font-size: 13px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #9db1a5;
+}
+
+.more-info__item-1 {
+  font-weight: 700;
+}
+
+.more-info__item-2 {
+}
+
+.more-info__item-3 {
+}
+
+.more-info__item-4 {
+}
+
+
+
+
+
+/*=============
+==============*/
+
+.copyright {
+  display: inline-block;
+  margin-left: 153px;
+  vertical-align: top;
+}
+
+.copyright__logo {
+  width: 108px;
+  height: 38px;
+  display: block;
+  margin-left: 66px;
+  margin-top: 3px;
+}
+
+.copyright__text {
+  margin: 0;
+  color: #fefefe;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 18px;
+  margin-left: 63px;
+  margin-top: 4px;
+}
+
+.copyright__link {
+  color: #fefefe;
+  text-decoration: none;
+  border-bottom: 1px solid #9db1a5;
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================== 
+ФОРМА ОБРАТНОЙ СВЯЗИ
+===========================*/
+
+.modal-writeus {
+  display: none;
+}
+
+.modal-writeus__close {
+  
 }
