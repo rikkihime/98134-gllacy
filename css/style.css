@@ -828,7 +828,7 @@ h2 {
 
 .news__submit {
   text-decoration: none;
-  color: #fff;
+  color: #fefefe;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
@@ -843,4 +843,117 @@ h2 {
   margin-top: 34px;
   margin-left: 5px;
   border: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================== 
+БЛОК С КОНТАКТАМИ И КАРТОЙ
+===========================*/
+
+.contacts-full {
+  position: relative;
+  margin-top: 40px;
+}
+
+
+
+.contacts-full__map {
+  width: 100%;
+  position: absolute;
+/*  min-height: 430px;*/
+/*  margin-top: 40px;*/
+}
+
+
+
+.contacts-full__info-wrap {
+  width: 1146px;
+  min-height: 430px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0 27px;
+  position: relative;
+}
+
+.contacts-full__info {
+  position: absolute;
+  top: 61px;
+  right: 27px;
+  padding: 25px;
+  width: 252px;
+  border-radius: 15px;
+}
+
+.contacts-full__address p {
+  margin: 0;
+  color: #323232;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  width: 225px;
+  padding-top: 5px;
+}
+
+.contacts-full__address span {
+  color: #323232;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  padding-top: 1px;
+  padding-left: 1px;
+  display: block;
+}
+
+.contacts-full__phone p {
+  margin: 0;
+  color: #323232;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  width: 180px;
+  padding-top: 18px;
+  margin-bottom: 20px;
+}
+
+.contacts-full__phone span {
+  display: block;
+  color: #323232;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+
+.contacts-full__btn {
+  margin-top: 23px;
+  margin-left: 0px;
+  padding: 9px 26px;
+  padding-left: 30px;
+  padding-bottom: 12px;
+  border: none;
+  border-radius: 50px;
+  background: #ec583c;
+  background: linear-gradient(to bottom, #f16743, #e74b36);
+  box-shadow: 0 2px 3px 0 #ab5948;
+  color: #fefefe;
+  text-decoration: none;
+  text-shadow: 0 3px 7px #e9543a;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 24px;
+  display: block;
 }
