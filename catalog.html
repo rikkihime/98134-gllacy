@@ -26,7 +26,7 @@
             <ul class="main-nav__list">
 
               <li class="main-nav__item  main-nav__item--1">
-                <a href="#" class="main-nav__link">Каталог</a>
+                <a href="#" class="main-nav__link main-nav__link--active">Каталог</a>
                 <ul class="main-nav__submenu-list">
                   <li class="main-nav__submenu-item">
                     <span class="main-nav__submenu-title">Новинки</span>
@@ -130,7 +130,7 @@
             
             <div class="contacts-brief">
               С 10 до 20, ежедневно
-              <span>8 812 450-25-25</span>
+              <span>8&nbsp;812 450-25-25</span>
             </div>
             
           </div>
@@ -168,20 +168,23 @@
 
           <form action="/echo" method="post">
 
-            <div class="sorting__select">
+            <div class="sorting__item  sorting__select">
               <h4>Сортировка:</h4>
-              <select name="sort-select" id="sort-select">
-                <option value="pops" selected>по популярности</option>
-                <option value="cheap">сначала недорогие</option>
-                <option value="expensive">сначала дорогие</option>
-                <option value="fat">по жирности</option>
-              </select>
+              <div class="sorting__select-custom">
+                <select name="sort-select" id="sort-select">
+                  <option value="pops" selected>по популярности</option>
+                  <option value="cheap">сначала недорогие</option>
+                  <option value="expensive">сначала дорогие</option>
+                  <option value="fat">по жирности</option>
+                </select>
+                <span class="sorting__select-pointer"></span>
+              </div>
             </div>
 
-            <div class="sorting__price">
+            <div class="sorting__item  sorting__price">
               <h4>Цена:
                 <input class="sorting__price-min" type="text" name="price-min" value="100 руб."> – 
-                <input class="sorting__price-min" type="text" name="price-max" value="500 руб.">
+                <input class="sorting__price-max" type="text" name="price-max" value="500 руб.">
               </h4>
               <div class="sorting__price-controls">
                 <div class="sorting__price-scale">
@@ -192,10 +195,10 @@
               </div>
             </div>
 
-            <div class="sorting__fat">
+            <div class="sorting__item  sorting__fat">
               <h4>Жирность:</h4>
               <div class="sorting__fat-radio">
-                <input type="radio" id="fat-radio-1" name="fat-radio" value="0-proc">
+                <input type="radio" id="fat-radio-1" name="fat-radio" value="0-proc" disabled>
                 <label for="fat-radio-1">0%</label>
 
                 <input type="radio" id="fat-radio-2" name="fat-radio" value="10max-proc" checked>
@@ -209,7 +212,7 @@
               </div>
             </div>
 
-            <div class="sorting__check">
+            <div class="sorting__item  sorting__check">
               <h4>Наполнители:</h4>
               <div class="sorting__check-items">
                 <input type="checkbox" id="ch-1" name="check" value="check1" checked>
@@ -221,7 +224,7 @@
                 <input type="checkbox" id="ch-3" name="check" value="check3">
                 <label for="ch-3">фрукты</label>
 
-                <input type="checkbox" id="ch-4" name="check" value="check4">
+                <input type="checkbox" id="ch-4" name="check" value="check4" disabled>
                 <label for="ch-4">сиропы</label>
 
                 <input type="checkbox" id="ch-5" name="check" value="check5">

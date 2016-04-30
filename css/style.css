@@ -83,7 +83,7 @@ h2 {
 
 .main-nav__list {
   margin: 0;
-  margin-left: 20px;
+  margin-left: 15px;
   padding: 0;
 }
 
@@ -92,6 +92,7 @@ h2 {
   vertical-align: top;
   list-style: none;
   margin-top: 19px;
+  margin-right: 0;
 }
 
 .main-nav__item--1 {
@@ -100,16 +101,17 @@ h2 {
 
 .main-nav__link {
   position: relative;
-  margin-right: 4px;
-  padding: 10px;
-  width: 33px;
-  height: 33px;
-  border-radius: 50px;
+  margin-right: 0px;
+  padding: 7px 14px;
+  border-radius: 20px;
   color: #fff;
   text-decoration: none;
   font-size: 16px;
   line-height: 18px;
   font-family: "Roboto", Arial, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 500;
 }
 
 .main-nav__link::before {
@@ -120,6 +122,10 @@ h2 {
   left: 9px;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-nav__link--active {
+  background-color: #d07058;
 }
 
 .main-nav__link:hover {
@@ -160,8 +166,9 @@ h2 {
 .main-head__user-menu {
   min-height: 75px;
   float: right;
-  width: 262px;
+  min-width: 262px;
   margin-top: 14px;
+  position: relative;
 }
 
 
@@ -240,11 +247,13 @@ h2 {
   color: #fff;
   text-decoration: none;
   display: block;
-  width: 48px;
-  height: 24px;
+  max-width: 330px;
+  overflow: hidden;
+  white-space: nowrap;
   border-radius: 50px;
-  padding-top: 8px;
+  padding: 8px;
   padding-left: 44px;
+  padding-right: 15px;
   background: #9db1a5 url(../img/login-icon.png) no-repeat 18px 6px;
   font-size: 14px;
   line-height: 16px;
@@ -297,40 +306,56 @@ h2 {
 
 .cart {
   position: relative;
+  
 }
 
 .cart__link {
   color: #fff;
   text-decoration: none;
   display: block;
-  width: 72px;
-  height: 24px;
   border-radius: 50px;
-  padding-top: 8px;
-  padding-left: 45px;
-  background: #9db1a5 url(../img/cart-icon.png) no-repeat 18px 6px;
+  padding: 8px;
+  padding-right: 17px;
+  padding-left: 44px;
+  background: #9db1a5 url(../img/cart-icon.png) no-repeat 16px 6px;
   font-size: 14px;
   line-height: 16px;
 }
 
+.cart__link--full {
+  color: #323232;
+  background: #f7f6f3 url(../img/cart-full-icon.png) no-repeat 16px 6px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cart__modal {
+  display: none;
+}
 
 
 .contacts-brief {
-  width: 170px;
-  float: right;
+  width: 175px;
   font-size: 14px;
   font-family: "Roboto", Arial, sans-serif;
   line-height: 16px;
   text-align: right;
   padding-top: 7px;
-  font-weight: 500;
   font-weight: 600;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 43px;
+  
 }
 
 .contacts-brief span {
   font-size: 22px;
   line-height: 34px;
-  font-weight: 500;
+  font-weight: 700;
   font-family: "Roboto", Arial, sans-serif;
 }
 
@@ -348,9 +373,7 @@ h2 {
 
 
 .page__main-content {
-/*  width: 1150px;*/
-/*  margin: 0 auto;*/
-/*  padding: 0 25px;*/
+  
 }
 
 
@@ -1128,3 +1151,459 @@ h2 {
 .modal-writeus__close {
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========================
+=============================
+
+КАТАЛОГ
+
+===========================
+===========================*/
+
+.catalog-content {
+/*  margin: 0 auto;*/
+/*  padding: 0 27px;*/
+/*  width: 1146px;*/
+}
+
+
+
+/*=========================== 
+КРОШКИ
+===========================*/
+
+.breadcrumbs {
+  margin: -22px auto;
+  margin-bottom: 0;
+  padding: 0 27px;
+  width: 1146px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 16px;
+}
+
+.breadcrumbs__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 16px;
+  padding-left: 1px;
+  position: relative;
+}
+
+.breadcrumbs__item::after:not(span) {
+  content: "»";
+  position: absolute;
+  top: 2px;
+  right: 4px;
+}
+
+.breadcrumbs__item a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #9db1a5;
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================== 
+ЗАГОЛОВОК
+===========================*/
+
+.catalog-content__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 1146px;
+  padding: 0 27px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 35px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 41px;
+  padding-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================== 
+СОРТИРОВКА
+===========================*/
+
+.sorting {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+  margin-bottom: 20px;
+}
+
+
+
+.sorting__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.sorting__item h4 {
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 16px;
+  margin-left: 16px;
+  margin-bottom: 6px;
+}
+
+
+
+
+
+/*=============
+==============*/
+
+.sorting__select-custom {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  min-height: 36px;
+  width: 193px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.sorting__select-custom::after {
+  content: "";
+  position: absolute;
+  border: 4px solid transparent; 
+  border-top: 5px solid #fff; 
+  top: 17px;
+  right: 15px;
+}
+
+.sorting__select-custom:hover::after {
+  content: "";
+  position: absolute;
+  border: 4px solid transparent; 
+  border-top: 5px solid #323232; 
+  top: 17px;
+  right: 15px;
+}
+
+.sorting__select select {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 18px;
+  background-color: #a9bab0;
+  padding: 7px 12px;
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  width: 215px;
+}
+
+.sorting__select select:hover {
+  background-color: #fff;
+  color: #323232;
+  cursor: pointer;
+}
+
+.sorting__select option:hover {
+  cursor: pointer;
+  background-color: #323232;
+}
+
+
+
+
+
+/*=============
+==============*/
+
+.sorting__price {
+  
+}
+
+.sorting__price-min {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 16px;
+  background-color: inherit;
+  border: none;
+  width: 54px;
+}
+
+.sorting__price-max {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 16px;
+  background-color: inherit;
+  border: none;
+  width: 54px;
+}
+
+.sorting__price-controls {
+  padding: 16px 15px;
+  margin-left: 2px;
+  margin-top: 6px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #aabbb1;
+}
+
+.sorting__price-scale {
+  height: 4px;
+  background-color: #d1dad3;
+  width: 188px;
+  position: relative;
+}
+
+.sorting__price-bar {
+  position: absolute;
+  width: 106px;
+  height: 4px;
+  top: 0;
+  left: 22px;
+  background-color: #f8f7f4;
+}
+
+.sorting__price-toggle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f8f7f4;
+  position: absolute;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.sorting__price-toggle--min {
+  top: 8px;
+  left: 36px;
+}
+
+.sorting__price-toggle--max {
+  top: 8px;
+  left: 133px;
+}
+
+
+
+
+
+/*=============
+==============*/
+
+.sorting__fat {
+  
+  
+}
+
+.sorting__fat-radio {
+  height: 36px;
+  vertical-align: middle;
+  padding: 0 17px;
+  border-radius: 20px;
+  background-color: #aabbb1;
+}
+
+.sorting__fat-radio label {
+  position: relative;
+  display: inline-block;
+  margin-top: 7px;
+  margin-right: 6px;
+  padding-top: 2px;
+  padding-right: 10px;
+  padding-left: 30px;
+  height: 19px;
+  background: url(../img/radio.png) no-repeat 0 0;
+  color: #fff;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 18px;
+}
+
+.sorting__fat-radio label:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.sorting__fat-radio label:hover {
+  background: url(../img/radio-hover.png) no-repeat 0 0;
+}
+
+.sorting__fat-radio input[type="radio"] {
+  display: none;
+}
+
+.sorting__fat-radio input[type="radio"]:checked + label {
+  background: url(../img/radio-checked.png) no-repeat 0 0;
+}
+
+.sorting__fat-radio input[type="radio"]:checked + label:hover {
+  background: url(../img/radio-hover-checked.png) no-repeat 0 0;
+}
+
+.sorting__fat-radio input[type="radio"]:disabled + label {
+  background: url(../img/radio-disabled.png) no-repeat 0 0;
+}
+
+
+
+
+
+/*=============
+==============*/
+
+.sorting__check {
+  
+}
+
+.sorting__check-items {
+  height: 36px;
+  vertical-align: middle;
+  padding: 0 15px;
+  border-radius: 20px;
+  background-color: #aabbb1;
+}
+
+.sorting__check-items input {
+  display: none;
+}
+
+.sorting__check-items label {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 18px;
+  margin-top: 7px;
+  height: 22px;
+  padding-top: 2px;
+  padding-left: 33px;
+  padding-right: 10px;
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: top;
+  background: url(../img/checkbox.png) no-repeat 1px 1px;
+}
+
+.sorting__check-items label:last-child {
+/*  padding-right: 0;*/
+  margin-right: 0;
+}
+
+.sorting__check-items label:hover {
+  background: url(../img/checkbox-hover.png) no-repeat 1px 1px;
+}
+
+.sorting__check-items input[type="checkbox"]:checked + label {
+  background: url(../img/checkbox-checked.png) no-repeat 1px 1px;
+}
+
+.sorting__check-items input[type="checkbox"]:checked + label:hover {
+  background: url(../img/checkbox-hover-checked.png) no-repeat 1px 1px;
+}
+
+.sorting__check-items input[type="checkbox"]:disabled + label {
+  background: url(../img/checkbox-disabled.png) no-repeat 1px 1px;
+}
+
+
+
+
+
+/*=============
+==============*/
+
+.sorting__btn {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 18px;
+  padding: 7px 27px;
+  border-radius: 20px;
+  background-color: #aabbb1;
+  border: 2px solid #fff;
+  margin-top: 28px;
+}
+
+.sorting__btn:hover {
+  background-color: #fbfcfb;
+  color: #323232;
+}
+
+.sorting__btn:focus {
+  background-color: #eaeaea;
+  color: #323232;
+  box-shadow: inset 0 2px 3px 0px #686868;
+  border: 2px solid #eaeaea;
+  border: none;
+  padding: 9px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================== 
+СОРТИРОВКА
+===========================*/
+
