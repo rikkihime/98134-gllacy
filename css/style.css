@@ -587,6 +587,7 @@ h2 {
   width: 267px;
   margin-right: 22px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .product:nth-child(4n+4) {
@@ -601,6 +602,8 @@ h2 {
 
 .product__icecream-pic {
   border-radius: 50%;
+  width: 267px;
+  height: 267px;
 }
 
 .product__price {
@@ -636,10 +639,12 @@ h2 {
   text-decoration: none;
   color: #fff;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 6px;
   display: inline-block;
   vertical-align: top;
+  width: 267px;
+  position: relative;
 }
 
 .product__name h4 {
@@ -649,9 +654,49 @@ h2 {
 
 .product__btn {
   display: none;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #fefefe;
+  border-radius: 20px;
+  position: absolute;
+  top: 333px;
+  left: 34px;
+  padding: 9px 16px;
+  padding-bottom: 11px;
+/*  text-shadow: 0 3px 7px #c73f25;*/
+  border-radius: 50px;
+  box-shadow: 0 2px 3px 0 #ab5948;
+  background: #ec583c;
+  background: linear-gradient(to bottom, #f16743, #e74b36);
+}
+
+.product::before  {
+  content: "";
+  width: 267px;
+  height: 395px;
+  padding: 5px;
+  background-color: rgba(248, 247, 244, 0.3);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  display: none;
+}
+
+.product:hover {
+  z-index: 10;
+}
+
+.product:hover::before {
+  display: block;
 }
 
 .product:hover .product__btn {
+  display: block;
   
 }
 
@@ -1176,9 +1221,7 @@ h2 {
 ===========================*/
 
 .catalog-content {
-/*  margin: 0 auto;*/
-/*  padding: 0 27px;*/
-/*  width: 1146px;*/
+  
 }
 
 
@@ -1472,6 +1515,7 @@ h2 {
   font-size: 16px;
   font-family: "Roboto", Arial, sans-serif;
   line-height: 18px;
+  cursor: pointer;
 }
 
 .sorting__fat-radio label:last-child {
@@ -1537,10 +1581,10 @@ h2 {
   display: inline-block;
   vertical-align: top;
   background: url(../img/checkbox.png) no-repeat 1px 1px;
+  cursor: pointer;
 }
 
 .sorting__check-items label:last-child {
-/*  padding-right: 0;*/
   margin-right: 0;
 }
 
@@ -1578,6 +1622,7 @@ h2 {
   background-color: #aabbb1;
   border: 2px solid #fff;
   margin-top: 28px;
+  cursor: pointer;
 }
 
 .sorting__btn:hover {
@@ -1607,3 +1652,12 @@ h2 {
 СОРТИРОВКА
 ===========================*/
 
+
+.catalog {
+  width: 1146px;
+  min-height: 330px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 0 27px;
+}
