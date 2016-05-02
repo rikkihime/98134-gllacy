@@ -254,14 +254,14 @@ h2 {
   padding: 8px;
   padding-left: 44px;
   padding-right: 15px;
-  background: #9db1a5 url(../img/login-icon.png) no-repeat 18px 6px;
+  background: #9db1a5 url(../img/login-icon.png) no-repeat 17px 6px;
   font-size: 14px;
   line-height: 16px;
   font-family: "Roboto", Arial, sans-serif;
 }
 
 .login__btn:hover {
-  background: #f8f7f4 url(../img/login-black-icon.png) no-repeat 18px 6px;
+  background: #f8f7f4 url(../img/login-black-icon.png) no-repeat 17px 6px;
   color: #323232;
 }
 
@@ -316,15 +316,16 @@ h2 {
   border-radius: 50px;
   padding: 8px;
   padding-right: 17px;
-  padding-left: 44px;
-  background: #9db1a5 url(../img/cart-icon.png) no-repeat 16px 6px;
+  padding-left: 46px;
+  background: #9db1a5 url(../img/cart-icon.png) no-repeat 18px 6px;
   font-size: 14px;
   line-height: 16px;
+  min-width: 54px;
 }
 
 .cart__link--full {
   color: #323232;
-  background: #f7f6f3 url(../img/cart-full-icon.png) no-repeat 16px 6px;
+  background: #f7f6f3 url(../img/cart-full-icon.png) no-repeat 18px 6px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 600;
@@ -399,6 +400,7 @@ h2 {
   min-height: 470px;
   position: relative;
   margin: 0 auto;
+  margin-top: 45px;
 }
 
 .slider__title {
@@ -413,7 +415,7 @@ h2 {
   padding: 0;
   position: absolute;
   top: 249px;
-  left: 233px; 
+  left: 231px; 
   display: inline-block;
   vertical-align: top;
 }
@@ -574,7 +576,6 @@ h2 {
   width: 1146px;
   min-height: 330px;
   margin: 0 auto;
-  margin-bottom: 20px;
   margin-top: 40px;
   padding: 0 27px;
 }
@@ -718,7 +719,6 @@ h2 {
   min-height: 307px;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 30px;
   padding: 0 27px;
   
 }
@@ -738,7 +738,7 @@ h2 {
   font-weight: 500;
   font-family: "Roboto", Arial, sans-serif;
   padding-left: 20px;
-  padding-top: 25px;
+  padding-top: 22px;
 /*  font-kerning: none;*/
   margin: 0;
 }
@@ -800,7 +800,7 @@ h2 {
   min-height: 220px;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 38px;
   padding: 0 27px;
 }
 
@@ -832,7 +832,7 @@ h2 {
   line-height: 22px;
   font-weight: 500;
   font-family: "Roboto", Arial, sans-serif;
-  padding-top: 23px;
+  padding-top: 22px;
   padding-left: 20px;
 }
 
@@ -840,7 +840,7 @@ h2 {
   width: 330px;
   display: inline-block;
   padding-left: 20px;
-  padding-top: 3px;
+  padding-top: 5px;
   color: #323232;
 }
 
@@ -874,7 +874,7 @@ h2 {
   line-height: 22px;
   font-weight: 500;
   font-family: "Roboto", Arial, sans-serif;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-left: 22px;
 }
 
@@ -946,7 +946,7 @@ h2 {
   width: 1146px;
   min-height: 430px;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding: 0 27px;
   position: relative;
 }
@@ -968,7 +968,7 @@ h2 {
   font-weight: 500;
   font-family: "Roboto", Arial, sans-serif;
   width: 225px;
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .contacts-full__address span {
@@ -1002,11 +1002,11 @@ h2 {
   font-weight: 500;
   font-family: "Roboto", Arial, sans-serif;
   padding-top: 5px;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
 }
 
 .contacts-full__btn {
-  margin-top: 23px;
+  margin-top: 24px;
   margin-left: 0px;
   padding: 9px 26px;
   padding-left: 30px;
@@ -1166,7 +1166,7 @@ h2 {
   font-size: 12px;
   font-family: "Roboto", Arial, sans-serif;
   line-height: 18px;
-  margin-left: 63px;
+  margin-left: 64px;
   margin-top: 4px;
 }
 
@@ -1649,7 +1649,7 @@ h2 {
 
 
 /*=========================== 
-СОРТИРОВКА
+КАТАЛОГ (общее, остальное - в промо)
 ===========================*/
 
 
@@ -1660,4 +1660,110 @@ h2 {
   margin-bottom: 20px;
   margin-top: 30px;
   padding: 0 27px;
+}
+
+
+
+
+
+
+
+
+
+
+/*=========================== 
+ПАГИНАЦИЯ
+===========================*/
+
+.pagination {
+  width: 1146px;
+  min-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 0 27px;
+}
+
+.pagination__list {
+  list-style: none;
+  text-align: right;
+  padding-top: 9px;
+}
+
+.pagination__item {
+  display: inline-block;
+  position: relative;
+}
+
+.pagination__link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  width: 27px;
+  height: 22px;
+  padding-top: 5px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: -2px;
+}
+
+.pagination__link:not(.pagination__link--current):hover {
+  background-color: #9db1a5;
+}
+
+.pagination__link-prev--disabled {
+  font-size: 0;
+  width: 15px;
+  margin-right: 8px;
+}
+
+.pagination__link-next {
+  font-size: 0;
+  width: 15px;
+  margin-left: 5px;
+}
+
+.pagination__link--current {
+  background-color: #fff;
+  color: #353535;
+}
+
+.pagination__link-prev--disabled::before,
+.pagination__link-next::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  display: block;
+  width: 7px;
+  height: 7px;
+}
+
+.pagination__link-prev--disabled::before {
+  left: 2px;
+  top: 9px;
+  font-size: 0;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  transform: rotate(-45deg);
+}
+
+.pagination__link--next::before {
+  right: 2px;
+  font-size: 0;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: rotate(-45deg);
+}
+
+
+
+
+.catalog-content__line {
+  
 }
