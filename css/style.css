@@ -517,7 +517,7 @@ h2 {
   margin-right: 22px;
   min-height: 230px;
   position: relative;
-  background: url(../img/banners-raspberry.jpg) no-repeat;
+  background: #950318 url(../img/banners-raspberry.jpg) no-repeat;
   border-radius: 10px;
 }
 
@@ -527,7 +527,7 @@ h2 {
   width: 560px;
   min-height: 230px;
   position: relative;
-  background: url(../img/banners-chocolate.jpg) no-repeat;
+  background: #4d2f21 url(../img/banners-chocolate.jpg) no-repeat;
   border-radius: 10px;
 }
 
@@ -726,7 +726,7 @@ h2 {
 
 
 .features__content {
-  background: url(../img/features-pattern.jpg);
+  background: #efe3c8 url(../img/features-pattern.jpg);
   border-radius: 15px;
   min-height: 307px;
 }
@@ -821,7 +821,7 @@ h2 {
 
 .news__random-theme {
   min-height: 220px;
-  background: url(../img/news-theme.jpg) no-repeat;
+  background: #fff url(../img/news-theme.jpg) no-repeat;
   border-radius: 15px;
 }
 
@@ -958,6 +958,7 @@ h2 {
   padding: 25px;
   width: 252px;
   border-radius: 15px;
+  background-color: #fefefe;
 }
 
 .contacts-full__address p {
