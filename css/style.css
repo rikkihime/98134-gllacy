@@ -85,6 +85,7 @@ h2 {
   margin: 0;
   margin-left: 15px;
   padding: 0;
+  display: table;
 }
 
 .main-nav__item {
@@ -92,7 +93,7 @@ h2 {
   vertical-align: top;
   list-style: none;
   margin-top: 19px;
-  margin-right: 0;
+  padding-bottom: 10px;
 }
 
 .main-nav__item--1 {
@@ -101,7 +102,6 @@ h2 {
 
 .main-nav__link {
   position: relative;
-  margin-right: 0px;
   padding: 7px 14px;
   border-radius: 20px;
   color: #fff;
@@ -117,9 +117,9 @@ h2 {
 .main-nav__link::before {
   content: "";
   position: absolute;
-  bottom: 11px;
-  right: 9px;
-  left: 9px;
+  bottom: 7px;
+  right: 13px;
+  left: 13px;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -128,7 +128,16 @@ h2 {
   background-color: #d07058;
 }
 
+.main-nav__link--active::before {
+  background-color: #d07058;
+}
+
 .main-nav__link:hover {
+  background-color: #f7f6f3;
+  color: #333333;
+}
+
+.main-nav__link--active:hover::before {
   background-color: #f7f6f3;
   color: #333333;
 }
@@ -136,24 +145,65 @@ h2 {
 .main-nav__submenu-list {
   display: none;
   position: absolute;
+  top: 32px;
+  left: -5px;
   list-style: none;
   margin: 0;
   padding: 0;
+  border-radius: 5px;
+  color: #323232;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .main-nav__item--1:hover .main-nav__submenu-list {
   display: block;
   position: absolute;
   clear: both;
+  z-index: 200;
+}
+
+.main-nav__submenu-title {
+  color: #323232;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  padding: 11px 20px;
+/*  margin-bottom: 5px;*/
+  display: block;
+  border-bottom: 1px solid #d1d0ce;
 }
 
 .main-nav__submenu-item {
-  
+/*  padding: 10px 0;*/
+  margin-bottom: 5px;
 }
 
 .main-nav__submenu-link {
   text-decoration: none;
+  color: #323232;
+  padding: 5px 20px;
+/*  padding-bottom: 10px;*/
+  display: block;
+}
+
+.main-nav__submenu-link--current {
+  background-color: #d07058;  
   color: #fff;
+}
+
+.main-nav__submenu-link:hover {
+  background-color: #fbded7;
+}
+
+.main-nav__submenu-link:active {
+  background-color: #f6b5a5;
 }
 
 
@@ -316,7 +366,7 @@ h2 {
   border-radius: 50px;
   padding: 8px;
   padding-right: 17px;
-  padding-left: 46px;
+  padding-left: 44px;
   background: #9db1a5 url(../img/cart-icon.png) no-repeat 18px 6px;
   font-size: 14px;
   line-height: 16px;
@@ -653,6 +703,10 @@ h2 {
   border-bottom: 1px solid rgba(230, 230, 235, 0.3);
 }
 
+.product:hover h4 {
+  border: none;
+}
+
 .product__btn {
   display: none;
   text-decoration: none;
@@ -667,7 +721,6 @@ h2 {
   left: 34px;
   padding: 9px 16px;
   padding-bottom: 11px;
-/*  text-shadow: 0 3px 7px #c73f25;*/
   border-radius: 50px;
   box-shadow: 0 2px 3px 0 #ab5948;
   background: #ec583c;
@@ -842,6 +895,13 @@ h2 {
   padding-left: 20px;
   padding-top: 5px;
   color: #323232;
+  text-decoration: none;
+}
+
+.news__random-link h3:hover,
+.news__random-link h3:active {
+  color: #e84d37;
+  border-color: rgba(232, 77, 55, 0.5);
 }
 
 .news__random-link h3 {
@@ -851,6 +911,8 @@ h2 {
   font-weight: 600;
   font-family: "Roboto", Arial, sans-serif;
   margin: 0;
+  border-bottom: 2px solid #323232;
+  display: inline;
 }
 
 .news__block--subs-bg {
@@ -1126,6 +1188,12 @@ h2 {
   border-bottom: 1px solid #9db1a5;
 }
 
+.more-info__item:hover,
+.more-info__item:active {
+  color: #ffbc9e;
+  border-color: rgba(255, 188, 158, 0.3);
+}
+
 .more-info__item-1 {
   font-weight: 700;
 }
@@ -1175,6 +1243,12 @@ h2 {
   color: #fefefe;
   text-decoration: none;
   border-bottom: 1px solid #9db1a5;
+}
+
+.copyright__link:hover,
+.copyright__link:active {
+  color: #ffbc9e;
+  border-color: rgba(255, 188, 158, 0.3);
 }
 
 
@@ -1255,17 +1329,25 @@ h2 {
   position: relative;
 }
 
-.breadcrumbs__item::after:not(span) {
+.breadcrumbs__item a::after {
   content: "»";
   position: absolute;
+  z-index: 100;
   top: 2px;
   right: 4px;
+  color: #fff;
 }
 
 .breadcrumbs__item a {
   color: #fff;
   text-decoration: none;
   border-bottom: 1px solid #9db1a5;
+}
+
+.breadcrumbs__item a:hover,
+.breadcrumbs__item a:active {
+  color: #ffbc9e;
+  border-color: rgba(255, 188, 158, 0.3);
 }
 
 
