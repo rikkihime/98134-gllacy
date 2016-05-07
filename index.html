@@ -70,7 +70,8 @@
                 <a class="search__btn" href="#" title="Поиск"></a>
                 <div class="search__popup">
                   <form class="search__form" action="#" method="get">
-                    <input class="search__input" type="search" id="search" name="search" placeholder="Что ищем?" required>
+                    <input class="search__input" type="text" id="search" name="search" required>
+                    <label class="search__label" for="search">Что ищем?</label>
                   </form>
                 </div>
               </div>
@@ -80,9 +81,18 @@
               <div class="login">
                 <a class="login__btn" href="#">Вход</a>
                 <div class="login__popup">
+                 
                   <form class="login__form" action="/echo" method="post">
-                    <input class="login__email" type="email" id="email" name="email" placeholder="Электронная почта" required>
-                    <input class="login__password" type="password" id="password" name="password" placeholder="Пароль" required>
+                   
+                    <div class="login__email">
+                      <input class="login__email-input" type="email" id="email" name="email" required>
+                      <label class="login__email-label" for="email">Электронная почта</label>
+                    </div>
+                    
+                    <div class="login__password">
+                      <input class="login__password-input" type="password" id="password" name="password" required>
+                      <label class="login__password-label" for="email">Пароль</label>
+                    </div>
                     <input class="login__submit" type="submit" value="Войти">
                     <div class="login__links">
                       <a href="#">Забыли пароль?</a>
