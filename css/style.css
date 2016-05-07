@@ -412,7 +412,7 @@ h2 {
 
 .login__form {
   width: 278px;
-  height: 214px;
+  min-height: 214px;
   border-radius: 5px;
   padding: 20px;
   padding-left: 19px;
@@ -495,7 +495,14 @@ h2 {
   color: #999;
 }
 
+.login__clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
 .login__submit {
+  float: left;
   color: #fff;
   font-size: 18px;
   line-height: 24px;
@@ -508,8 +515,6 @@ h2 {
   box-shadow: 0 2px 2px 0 #e74b36;
   background: #ec583c;
   background: linear-gradient(to bottom, #f16743, #e74b36);
-  display: inline-block;
-  vertical-align: top;
   border: none;
 }
 
@@ -524,10 +529,8 @@ h2 {
 }
 
 .login__links {
-  display: inline-block;
-  vertical-align: top;
+  float: right;
   width: 120px;
-  margin-left: 15px;
   margin-top: 4px;
 }
 
@@ -561,7 +564,6 @@ h2 {
 
 .cart {
   position: relative;
-  
 }
 
 .cart__link {
@@ -576,6 +578,7 @@ h2 {
   background: #9db1a5 url(../img/sprite.png) no-repeat 7px -44px;
   font-size: 14px;
   line-height: 16px;
+  font-family: "Roboto", Arial, sans-serif;
   min-width: 54px;
 }
 
@@ -586,13 +589,152 @@ h2 {
   font-size: 14px;
   line-height: 16px;
   font-weight: 600;
+  font-family: "Roboto", Arial, sans-serif;
   white-space: nowrap;
   overflow: hidden;
+  display: block;
 }
 
 .cart__modal {
   display: none;
+  position: absolute;
+  z-index: 200;
+  top: 36px;
+  right: 0;
+  box-sizing: border-box;
+  width: 540px;
+  min-height: 242px;
+  background-color: #f8f7f4;
+  color: #323232;
+  padding: 15px 14px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
+
+.cart:hover .cart__modal {
+  display: block;
+  position: absolute;
+  clear: both;
+}
+
+.cart__modal-table {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #cacac7;
+}
+
+.cart__modal-table td {
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+
+.cart__modal-del {
+  position: relative;
+  width: 10px;
+  padding-right: 13px;
+} 
+
+.cart__modal-del a {
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 300;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 26px;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  color: #323232;
+}
+
+.cart__modal-pic{
+  padding-right: 9px;
+  padding-top: 3px;
+  vertical-align: top;
+}
+
+.cart__modal-pic img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.cart__modal-product {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Roboto", Arial, sans-serif;
+  width: 220px;
+  vertical-align: top;
+  padding-top: 12px;
+  padding-right: 24px;
+}
+
+.cart__modal-price {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Roboto", Arial, sans-serif;
+  vertical-align: top;
+  padding-top: 12px;
+  width: 119px;
+}
+
+.cart__modal-price span {
+  color: #999;
+}
+
+.cart__modal-summary {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Roboto", Arial, sans-serif;
+  width: 65px;
+  vertical-align: top;
+  padding-top: 12px;
+}
+
+.cart__modal-total {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #333;
+  text-align: right;
+  margin-top: 14px;
+}
+
+.cart__modal-submit {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  text-shadow: 0 3px 7px #e9543a;
+  padding: 11px 15px;
+  padding-bottom: 12px;
+  border-radius: 30px;
+  box-shadow: 0 2px 2px 0 #e74b36;
+  background: #ec583c;
+  background: linear-gradient(to bottom, #f16743, #e74b36);
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  right: 13px;
+  z-index: 300;
+  cursor: pointer;
+}
+
+.cart__modal-submit:hover {
+  box-shadow: 0 2px 2px #ac1000;
+  background: linear-gradient(to bottom, #f58669, #ed705e);
+}
+
+.cart__modal-submit:active {
+  box-shadow: inset 0 2px 2px #ac1000;
+  background: linear-gradient(to top, #f16743, #e74b36);
+}
+
+
+
 
 
 .contacts-brief {
