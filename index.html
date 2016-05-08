@@ -70,7 +70,8 @@
                 <a class="search__btn" href="#" title="Поиск"></a>
                 <div class="search__popup">
                   <form class="search__form" action="#" method="get">
-                    <input class="search__input" type="search" id="search" name="search" placeholder="Что ищем?" required>
+                    <input class="search__input" type="text" id="search" name="search" required>
+                    <label class="search__label" for="search">Что ищем?</label>
                   </form>
                 </div>
               </div>
@@ -80,13 +81,24 @@
               <div class="login">
                 <a class="login__btn" href="#">Вход</a>
                 <div class="login__popup">
+
                   <form class="login__form" action="/echo" method="post">
-                    <input class="login__email" type="email" id="email" name="email" placeholder="Электронная почта" required>
-                    <input class="login__password" type="password" id="password" name="password" placeholder="Пароль" required>
-                    <input class="login__submit" type="submit" value="Войти">
-                    <div class="login__links">
-                      <a href="#">Забыли пароль?</a>
-                      <a href="#">Новая регистрация</a>
+
+                    <div class="login__email">
+                      <input class="login__email-input" type="email" id="email" name="email" required>
+                      <label class="login__email-label" for="email">Электронная почта</label>
+                    </div>
+                    
+                    <div class="login__password">
+                      <input class="login__password-input" type="password" id="password" name="password" required>
+                      <label class="login__password-label" for="email">Пароль</label>
+                    </div>
+                    <div class="login__clearfix">
+                      <input class="login__submit" type="submit" value="Войти">
+                      <div class="login__links">
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -362,13 +374,23 @@
       <p>Мы обязательно вам ответим!</p>
       
       <form class="modal-writeus__form" action="/echo" method="post">
-        <input class="modal-writeus__name" type="text" name="modal-writeus__name" placeholder="Как вас зовут?" required>
-        <input class="modal-writeus__email" type="email" name="modal-writeus__email" placeholder="Ваша почта для ответа?" required>
-        <textarea class="modal-writeus__text" name="modal-writeus__text" id="modal-writeus__text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+        <div class="modal-writeus__name">
+          <input class="modal-writeus__name-input" type="text" name="modal-writeus__name" id="modal-writeus__name" required>
+          <label class="modal-writeus__name-label" for="modal-writeus__name">Как вас зовут?</label>
+        </div>
+        <div class="modal-writeus__email">
+          <input class="modal-writeus__email-input" type="email" name="modal-writeus__email" id="modal-writeus__email" required>
+          <label class="modal-writeus__email-label" for="modal-writeus__email">Ваша почта для ответа?</label>
+        </div>
+        <div class="modal-writeus__text">
+          <textarea class="modal-writeus__textarea" name="modal-writeus__text" id="modal-writeus__text" cols="30" rows="5" required></textarea>
+          <label class="modal-writeus__textarea-label" for="modal-writeus__text">Напишите что-нибудь...</label>
+        </div>
         <input class="modal-writeus__btn" type="submit" name="modal-writeus__submit" value="Отправить">
       </form>
       
     </div>
+    <div class="modal-overlay"></div>
     
     
     
