@@ -374,13 +374,23 @@
       <p>Мы обязательно вам ответим!</p>
       
       <form class="modal-writeus__form" action="/echo" method="post">
-        <input class="modal-writeus__name" type="text" name="modal-writeus__name" placeholder="Как вас зовут?" required>
-        <input class="modal-writeus__email" type="email" name="modal-writeus__email" placeholder="Ваша почта для ответа?" required>
-        <textarea class="modal-writeus__text" name="modal-writeus__text" id="modal-writeus__text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+        <div class="modal-writeus__name">
+          <input class="modal-writeus__name-input" type="text" name="modal-writeus__name" id="modal-writeus__name" required>
+          <label class="modal-writeus__name-label" for="modal-writeus__name">Как вас зовут?</label>
+        </div>
+        <div class="modal-writeus__email">
+          <input class="modal-writeus__email-input" type="email" name="modal-writeus__email" id="modal-writeus__email" required>
+          <label class="modal-writeus__email-label" for="modal-writeus__email">Ваша почта для ответа?</label>
+        </div>
+        <div class="modal-writeus__text">
+          <textarea class="modal-writeus__textarea" name="modal-writeus__text" id="modal-writeus__text" cols="30" rows="5" required></textarea>
+          <label class="modal-writeus__textarea-label" for="modal-writeus__text">Напишите что-нибудь...</label>
+        </div>
         <input class="modal-writeus__btn" type="submit" name="modal-writeus__submit" value="Отправить">
       </form>
       
     </div>
+    <div class="modal-overlay"></div>
     
     
     

@@ -317,8 +317,8 @@ h2 {
 }
 
 .search__input:hover {
-  border-color: #999999;
-  box-shadow: inset 0 0 0 1px #999999;
+  border-color: #999;
+  box-shadow: inset 0 0 0 1px #999;
 }
 
 .search__input:focus {
@@ -459,8 +459,8 @@ h2 {
 
 .login__email-input:hover,
 .login__password-input:hover {
-  border-color: #999999;
-  box-shadow: inset 0 0 0 1px #999999;
+  border-color: #999;
+  box-shadow: inset 0 0 0 1px #999;
 }
 
 .login__email-input:focus,
@@ -516,6 +516,7 @@ h2 {
   background: #ec583c;
   background: linear-gradient(to bottom, #f16743, #e74b36);
   border: none;
+  outline: none;
 }
 
 .login__submit:hover {
@@ -564,6 +565,7 @@ h2 {
 
 .cart {
   position: relative;
+  padding-bottom: 15px;
 }
 
 .cart__link {
@@ -721,6 +723,7 @@ h2 {
   right: 13px;
   z-index: 300;
   cursor: pointer;
+  outline: none;
 }
 
 .cart__modal-submit:hover {
@@ -1348,7 +1351,7 @@ h2 {
   margin-top: 36px;
   margin-left: 22px;
   border: 1px solid #d3d3d2;
-  color: #999999;
+  color: #999;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -1375,6 +1378,7 @@ h2 {
   margin-left: 8px;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .news__submit:hover {
@@ -1402,14 +1406,21 @@ h2 {
 
 .contacts-full {
   position: relative;
+  margin: 0 auto;
   margin-top: 40px;
+  min-width: 1200px;
+  width: 100%;
 }
 
 
 
 .contacts-full__map {
+  min-width: 1200px;
   width: 100%;
+  height: 429px;
   position: absolute;
+  background: url(../img/map.jpg) no-repeat center;
+  margin: 0 auto;
 }
 
 
@@ -1708,12 +1719,217 @@ h2 {
 
 .modal-writeus {
   display: none;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  width: 476px;
+  min-height: 442px;
+  box-sizing: border-box;
+  background-color: #f8f7f4;
+  margin-left: -237px;
+  z-index: 1000;
+  border-radius: 5px;
+  padding: 17px 24px;
+}
+
+.modal-writeus__show {
+  display: block;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .modal-writeus__close {
-  
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  cursor: pointer;
 }
 
+.modal-writeus__close::before,
+.modal-writeus__close::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: #323232;
+  border-radius: 1px;
+  z-index: 2000;
+  top: 8px;
+  right: 0px;
+}
+
+.modal-writeus__close::before {
+  transform: rotate(45deg);
+}
+
+.modal-writeus__close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-writeus p {
+  margin: 0;
+  color: #323232;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.modal-writeus__form {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.modal-writeus__name,
+.modal-writeus__email,
+.modal-writeus__text {
+  position: relative;
+  margin-bottom: 20px;
+  width: 267px;
+  height: 44px;
+  border-radius: 5px;
+}
+
+.modal-writeus__name-input,
+.modal-writeus__email-input,
+.modal-writeus__textarea {
+  width: 267px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  padding: 0 14px;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #323232;
+}
+
+.modal-writeus__name-label,
+.modal-writeus__email-label,
+.modal-writeus__textarea-label {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Roboto", Arial, sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.modal-writeus__name-input:hover,
+.modal-writeus__email-input:hover,
+.modal-writeus__textarea:hover {
+  border-color: #999;
+  box-shadow: inset 0 0 0 1px #999;
+}
+
+.modal-writeus__name-input:focus,
+.modal-writeus__email-input:focus,
+.modal-writeus__textarea:focus {
+  border-color: #8fbdec;
+  box-shadow: inset 0 0 0 1px #8fbdec;
+  outline: none;
+}
+
+.modal-writeus__name-input:focus + .modal-writeus__name-label,
+.modal-writeus__name-input:valid + .modal-writeus__name-label,
+.modal-writeus__email-input:focus + .modal-writeus__email-label,
+.modal-writeus__email-input:valid + .modal-writeus__email-label,
+.modal-writeus__textarea:focus + .modal-writeus__textarea-label,
+.modal-writeus__textarea:valid + .modal-writeus__textarea-label {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  color: #5b9ddf;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.modal-writeus__name-input:valid,
+.modal-writeus__email-input:valid,
+.modal-writeus__textarea:valid {
+  border: 1px solid #d3d3d2;
+  outline: none;
+  box-shadow: none;
+}
+
+.modal-writeus__name-input:valid + .modal-writeus__name-label,
+.modal-writeus__email-input:valid + .modal-writeus__email-label,
+.modal-writeus__textarea:valid + .modal-writeus__textarea-label {
+  color: #999;
+}
+
+.modal-writeus__text {
+  width: 428px;
+  min-height: 155px;
+}
+
+.modal-writeus__textarea {
+  padding: 8px 14px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 155px;
+  resize: none;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+.modal-writeus__btn {
+  float: left;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  text-shadow: 0 3px 7px #e9543a;
+  padding: 11px 23px;
+  padding-bottom: 12px;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px 0 #e74b36;
+  background: #ec583c;
+  background: linear-gradient(to bottom, #f16743, #e74b36);
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  outline: none;
+}
+
+.modal-writeus__btn:hover {
+  box-shadow: 0 2px 2px #ac1000;
+  background: linear-gradient(to bottom, #f58669, #ed705e);
+  outline: none;
+}
+
+.modal-writeus__btn:active {
+  box-shadow: inset 0 2px 2px #ac1000;
+  background: linear-gradient(to top, #f16743, #e74b36);
+  outline: none;
+}
 
 
 
@@ -2159,6 +2375,7 @@ h2 {
   border: 2px solid #fff;
   margin-top: 28px;
   cursor: pointer;
+  outline: none;
 }
 
 .sorting__btn:hover {
@@ -2312,6 +2529,9 @@ h2 {
 
 
 
-.catalog-content__line {
-  
-}
+
+
+
+
+
+
