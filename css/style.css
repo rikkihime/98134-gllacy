@@ -1345,6 +1345,11 @@ h2 {
 }
 
 .news__email {
+  position: relative;
+  display: inline-block;
+}
+
+.news__email-input {
   width: 340px;
   height: 39px;
   border-radius: 5px;
@@ -1358,6 +1363,58 @@ h2 {
   font-family: "Roboto", Arial, sans-serif;
   padding-left: 13px;
   padding-right: 13px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.news__email-label {
+  position: absolute;
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Roboto", Arial, sans-serif;
+  top: 46px;
+  left: 36px;
+  z-index: 100;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 286px;
+}
+
+.news__email-input:hover {
+  border-color: #999999;
+  box-shadow: inset 0 0 0 1px #999999;
+}
+
+.news__email-input:focus {
+  border-color: #8fbdec;
+  box-shadow: inset 0 0 0 1px #8fbdec;
+  outline: none;
+}
+
+.news__email-input:focus + .news__email-label,
+.news__email-input:valid + .news__email-label {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  color: #5b9ddf;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.news__email-input:valid {
+  border: 1px solid #d3d3d2;
+  outline: none;
+  box-shadow: none;
+}
+
+.news__email-input:valid + .news__email-label {
+  color: #999;
 }
 
 .news__submit {

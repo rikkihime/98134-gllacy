@@ -283,7 +283,10 @@
               <p>Подпишитесь на нашу сладкую рассылку
                 и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и&nbsp;не&nbsp;слать всякой не нужной ерунды. Честно =) </p>
               <form action="/echo" method="post">
-                <input class="news__email" type="email" name="news-email" placeholder="Электронная почта" required>
+                <div class="news__email">
+                  <input class="news__email-input" type="email" name="news-email" id="news__email" required>
+                  <label class="news__email-label" for="news__email">Электронная почта</label>
+                </div>
                 <input class="news__submit" type="submit" value="Отправить">
               </form>
             </div>
