@@ -3,29 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,600,700&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+  
+  
   <body class="page">
-    
-    
-    <div class="page__main-head">
-    
+   
+    <input type="radio" class="slide-toggle" id="radio-slide1" name="toggle" checked>
+    <input type="radio" class="slide-toggle" id="radio-slide2" name="toggle">
+    <input type="radio" class="slide-toggle" id="radio-slide3" name="toggle">
+   
+    <div class="page__wrapper">
+  
+
       <header class="main-head  main-head--clearfix">
-      
-        
+
+
         <div class="main-head__logo">
           <div class="logo">
             <img src="img/logo.png" width="154" height="65" alt="logo" title="Логотип">
           </div>
         </div>
-        
-        
+
+
         <div class="main-head__main-nav">
           <nav class="main-nav">
-            
+
             <ul class="main-nav__list">
-              
+
               <li class="main-nav__item  main-nav__item--1">
                 <a href="#" class="main-nav__link">Каталог</a>
                 <ul class="main-nav__submenu-list">
@@ -46,25 +53,25 @@
                   </li>
                 </ul>
               </li>
-              
+
               <li class="main-nav__item">
                 <a href="#" class="main-nav__link">Доставка и оплата</a>
               </li>
-              
+
               <li class="main-nav__item">
                 <a href="#" class="main-nav__link">О Компании</a>
               </li>
-              
+
             </ul>
-            
+
           </nav>
         </div>
-        
-        
+
+
         <div class="main-head__user-menu">
-         
+
           <div class="user-menu">
-           
+
             <div class="user-menu__search">
               <div class="search">
                 <a class="search__btn" href="#" title="Поиск"></a>
@@ -76,7 +83,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="user-menu__login">
               <div class="login">
                 <a class="login__btn" href="#">Вход</a>
@@ -88,7 +95,7 @@
                       <input class="login__email-input" type="email" id="email" name="email" required>
                       <label class="login__email-label" for="email">Электронная почта</label>
                     </div>
-                    
+
                     <div class="login__password">
                       <input class="login__password-input" type="password" id="password" name="password" required>
                       <label class="login__password-label" for="email">Пароль</label>
@@ -104,49 +111,44 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="user-menu__cart">
               <div class="cart">
                 <a class="cart__link" href="#" title="Корзина">Пусто</a>
               </div>
             </div>
-            
+
           </div>
-          
-          
+
+
           <div class="contacts-brief">
             С 10 до 20, ежедневно
             <span>8&nbsp;812&nbsp;450-25-25</span>
           </div>
-          
+
         </div>
-        
-        
+
+
       </header>
-      
-    </div>
-    
-    
-    
-    
-    <div class="page__main-content">
-    
-    
+
+
+
+
       <main class="main-content">
 
         <section class="slider">
 
-          <div class="slider__item  slider__item--1">
+          <div class="slider__item  slider__item--1" id="slide-1">
             <h1 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h1>
             <a href="#" class="slider__btn">Давайте оба!</a>
           </div>
 
-          <div class="slider__item  slider__item--2">
+          <div class="slider__item  slider__item--2" id="slide-2">
             <h1 class="slider__title">Шоколадный пломбир и лимонный сорбет</h1>
             <a href="#" class="slider__btn">Давайте оба!</a>
           </div>
 
-          <div class="slider__item  slider__item--3">
+          <div class="slider__item  slider__item--3" id="slide-3">
             <h1 class="slider__title">Пломбир с помадкой и клубничный щербет</h1>
             <a href="#" class="slider__btn">Давайте оба!</a>
           </div>
@@ -154,13 +156,9 @@
           <div class="slider__toggle">
 
             <label for="radio-slide1" ></label>
-            <input type="radio" class="slide-toggle" id="radio-slide1" name="toggle" checked>
-
             <label for="radio-slide2" ></label>
-            <input type="radio" class="slide-toggle" id="radio-slide2" name="toggle">
-
             <label for="radio-slide3" ></label>
-            <input type="radio" class="slide-toggle" id="radio-slide3" name="toggle">
+            
 
           </div>
 
@@ -169,7 +167,7 @@
 
         <section class="banners">
 
-          <div class="banners__block-1">
+          <div class="banners__block  banners__block--1">
             <h2>Малинка даром!</h2>
             <p>При покупке 2 кг любого фруктового мороженого, добавим 
                в&nbsp;ваш заказ банку
@@ -177,7 +175,7 @@
             <a class="banners__btn" href="#">Хочу варенья!</a>
           </div>
 
-          <div class="banners__block-2">
+          <div class="banners__block  banners__block--2">
             <h2>Шоколадки даром!</h2>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку 
                вкуснейшей&nbsp;шоколадной присыпки абсолютно беспатно</p>
@@ -241,7 +239,7 @@
 
 
         <section class="features">
-          
+
           <div class="features__content">
 
             <h3 class="features__head">Магазин Глейси &nbsp;&mdash;&nbsp; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
@@ -261,14 +259,14 @@
             <div class="features__item  features__item--pic4">
               <p>Доставка нашего мороженого до заказчиков осуществляется в&nbsp;специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
             </div>
-          
+
           </div>
 
         </section>
 
 
         <section class="news">
-          
+
            <div class="news__block">
             <div class="news__random-theme">
               <p>Новое в нашем блоге</p>
@@ -277,7 +275,7 @@
               </a>
             </div>
           </div> 
-          
+
           <div class="news__block  news__block--subs-bg">
             <div class="news__subscribe">
               <p>Подпишитесь на нашу сладкую рассылку
@@ -291,16 +289,14 @@
               </form>
             </div>
           </div>      
-         
+
         </section>
 
 
         <div class="contacts-full">
 
-          <div class="contacts-full__map">
+          <div class="contacts-full__map"></div>
 
-          </div>
-            
           <div class="contacts-full__info-wrap">
             <div class="contacts-full__info">
               <div class="contacts-full__address">
@@ -314,88 +310,90 @@
                    <span>8 812 450-25-25</span>
                    (с 10 до 20 ежедневно)</p>
               </div>
-              <a class="contacts-full__btn" href="#">Форма обратной связи</a>
+              <a class="contacts-full__btn" href="write-us.html">Форма обратной связи</a>
             </div>
           </div>
-          
+
         </div>
 
       </main>
-      
-      
-    </div>
-     
-      
-      
-    <footer class="main-footer">
 
-      <div class="social">
-        <a class="social__btn  social__btn--twitter" href="#" title="Twitter">Twitter</a>
-        <a class="social__btn  social__btn--insta" href="#" title="Instagram">Instagram</a>
-        <a class="social__btn  social__btn--fb" href="#" title="Facebook">Facebook</a>
-        <a class="social__btn  social__btn--vk" href="#" title="Vkontakte">Vkontakte</a>
-      </div>
 
-      <div class="more-info">
-        <table>
-          <tr>
-            <td class="more-info__items">
-              <a class="more-info__item  more-info__item-1" href="#">Для поставщиков</a>
-            </td>
-            <td class="more-info__items">
-              <a class="more-info__item  more-info__item-2" href="#">Наши документы</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="more-info__items">
-              <a class="more-info__item  more-info__item-3" href="#">О производстве</a>
-            </td>
-            <td class="more-info__items">
-              <a class="more-info__item  more-info__item-4" href="#">Экологические стандарты</a>
-            </td>
-          </tr>
-        </table>
-      </div>
 
-      <div class="copyright">
-        <a class="copyright__logo" href="https://htmlacademy.ru" target="_blank">
-          <img src="img/academy-logo.png" width="108" height="38" alt="HTML Academy">
-        </a>
-        <p class="copyright__text">
-          Сделано в <a href="https://htmlacademy.ru" class="copyright__link" target="_blank">HTML Academy</a> © 2016
-        </p>
-      </div>
+      <footer class="main-footer">
 
-    </footer>
-    
-    
-    
-    <div class="modal-writeus">
-     
-      <div class="modal-writeus__close"></div>
-      
-      <p>Мы обязательно вам ответим!</p>
-      
-      <form class="modal-writeus__form" action="/echo" method="post">
-        <div class="modal-writeus__name">
-          <input class="modal-writeus__name-input" type="text" name="modal-writeus__name" id="modal-writeus__name" required>
-          <label class="modal-writeus__name-label" for="modal-writeus__name">Как вас зовут?</label>
+        <div class="social">
+          <a class="social__btn  social__btn--twitter" href="#" title="Twitter">Twitter</a>
+          <a class="social__btn  social__btn--insta" href="#" title="Instagram">Instagram</a>
+          <a class="social__btn  social__btn--fb" href="#" title="Facebook">Facebook</a>
+          <a class="social__btn  social__btn--vk" href="#" title="Vkontakte">Vkontakte</a>
         </div>
-        <div class="modal-writeus__email">
-          <input class="modal-writeus__email-input" type="email" name="modal-writeus__email" id="modal-writeus__email" required>
-          <label class="modal-writeus__email-label" for="modal-writeus__email">Ваша почта для ответа?</label>
+
+        <div class="more-info">
+          <table>
+            <tr>
+              <td class="more-info__items">
+                <a class="more-info__item  more-info__item-1" href="#">Для поставщиков</a>
+              </td>
+              <td class="more-info__items">
+                <a class="more-info__item  more-info__item-2" href="#">Наши документы</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="more-info__items">
+                <a class="more-info__item  more-info__item-3" href="#">О производстве</a>
+              </td>
+              <td class="more-info__items">
+                <a class="more-info__item  more-info__item-4" href="#">Экологические стандарты</a>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div class="modal-writeus__text">
-          <textarea class="modal-writeus__textarea" name="modal-writeus__text" id="modal-writeus__text" cols="30" rows="5" required></textarea>
-          <label class="modal-writeus__textarea-label" for="modal-writeus__text">Напишите что-нибудь...</label>
+
+        <div class="copyright">
+          <a class="copyright__logo" href="https://htmlacademy.ru" target="_blank">
+            <img src="img/academy-logo.png" width="108" height="38" alt="HTML Academy">
+          </a>
+          <p class="copyright__text">
+            Сделано в <a href="https://htmlacademy.ru" class="copyright__link" target="_blank">HTML Academy</a> © 2016
+          </p>
         </div>
-        <input class="modal-writeus__btn" type="submit" name="modal-writeus__submit" value="Отправить">
-      </form>
-      
-    </div>
-    <div class="modal-overlay"></div>
+
+      </footer>
+
+
+
+      <div class="modal-writeus">
+
+        <div class="modal-writeus__close"></div>
+
+        <p>Мы обязательно вам ответим!</p>
+
+        <form class="modal-writeus__form" action="/echo" method="post">
+          <div class="modal-writeus__name">
+            <input class="modal-writeus__name-input" type="text" name="modal-writeus__name" id="modal-writeus__name" required>
+            <label class="modal-writeus__name-label" for="modal-writeus__name">Как вас зовут?</label>
+          </div>
+          <div class="modal-writeus__email">
+            <input class="modal-writeus__email-input" type="email" name="modal-writeus__email" id="modal-writeus__email" required>
+            <label class="modal-writeus__email-label" for="modal-writeus__email">Ваша почта для ответа?</label>
+          </div>
+          <div class="modal-writeus__text">
+            <textarea class="modal-writeus__textarea" name="modal-writeus__text" id="modal-writeus__text" cols="30" rows="5" required></textarea>
+            <label class="modal-writeus__textarea-label" for="modal-writeus__text">Напишите что-нибудь...</label>
+          </div>
+          <input class="modal-writeus__btn" type="submit" name="modal-writeus__submit" value="Отправить">
+        </form>
+
+      </div>
+      <div class="modal-overlay"></div>
     
     
+    </div>  
+    
+    <script src="js/script.js"></script> 
     
   </body>
+  
+  
 </html>
