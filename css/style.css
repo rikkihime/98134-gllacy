@@ -495,6 +495,7 @@ h2 {
   border: none;
   border-radius: 50px;
   background: #ec583c;
+  background: -webkit-linear-gradient(top, #f16743, #e74b36);
   background: linear-gradient(to bottom, #f16743, #e74b36);
   box-shadow: 0 2px 2px 0 #e74b36;
   color: #fff;
@@ -506,11 +507,13 @@ h2 {
 }
 
 .login__submit:hover {
+  background: -webkit-linear-gradient(top, #f58669, #ed705e);
   background: linear-gradient(to bottom, #f58669, #ed705e);
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .login__submit:active {
+  background: -webkit-linear-gradient(bottom, #f16743, #e74b36);
   background: linear-gradient(to top, #f16743, #e74b36);
   box-shadow: inset 0 2px 2px #ac1000;
 }
@@ -698,6 +701,7 @@ h2 {
   border: none;
   border-radius: 30px;
   background: #ec583c;
+  background: -webkit-linear-gradient(top, #f16743, #e74b36);
   background: linear-gradient(to bottom, #f16743, #e74b36);
   box-shadow: 0 2px 2px 0 #e74b36;
   color: #fff;
@@ -710,11 +714,13 @@ h2 {
 }
 
 .cart__modal-submit:hover {
+  background: -webkit-linear-gradient(top, #f58669, #ed705e);
   background: linear-gradient(to bottom, #f58669, #ed705e);
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .cart__modal-submit:active {
+  background: -webkit-linear-gradient(bottom, #f16743, #e74b36);
   background: linear-gradient(to top, #f16743, #e74b36);
   box-shadow: inset 0 2px 2px #ac1000;
 }
@@ -737,7 +743,8 @@ h2 {
   line-height: 16px;
 }
 
-.contacts-brief span {
+.contacts-brief p {
+  margin: 0;
   font-weight: 700;
   font-size: 22px;
   font-family: "Roboto", Arial, sans-serif;
@@ -852,11 +859,12 @@ h2 {
   overflow: hidden;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 8px 40px;
+  padding: 8px 20px;
   padding-bottom: 12px;
   width: 278px;
   border-radius: 50px;
   background: #ec583c;
+  background: -webkit-linear-gradient(top, #f16743, #e74b36);
   background: linear-gradient(to bottom, #f16743, #e74b36);
   box-shadow: 0 2px 2px 0 #ab5948;
   color: #fff;
@@ -871,11 +879,13 @@ h2 {
 }
 
 .slider__btn:hover {
+  background: -webkit-linear-gradient(top, #f58669, #ed705e);
   background: linear-gradient(to bottom, #f58669, #ed705e);
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .slider__btn:active {
+  background: -webkit-linear-gradient(bottom, #f16743, #e74b36);
   background: linear-gradient(to top, #f16743, #e74b36);
   box-shadow: inset 0 2px 2px #ac1000;
 }
@@ -935,6 +945,7 @@ h2 {
   padding-bottom: 12px;
   border-radius: 50px;
   background: #ec583c;
+  background: -webkit-linear-gradient(top, #f16743, #e74b36);
   background: linear-gradient(to bottom, #f16743, #e74b36);
   box-shadow: 0 2px 2px 0 #e74b36;
   color: #fff;
@@ -954,11 +965,13 @@ h2 {
 }
 
 .banners__btn:hover {
+  background: -webkit-linear-gradient(top, #f58669, #ed705e);
   background: linear-gradient(to bottom, #f58669, #ed705e);
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .banners__btn:active {
+  background: -webkit-linear-gradient(bottom, #f16743, #e74b36);
   background: linear-gradient(to top, #f16743, #e74b36);
   box-shadow: inset 0 2px 2px #ac1000;
 }
@@ -1122,11 +1135,11 @@ h2 {
   margin: 10px auto;
   padding: 9px 16px;
   padding-bottom: 11px;
-  max-width: 200px;
+  width: 200px;
   max-height: 44px;
-  border-radius: 20px;
   border-radius: 50px;
   background: #ec583c;
+  background: -webkit-linear-gradient(top, #f16743, #e74b36);
   background: linear-gradient(to bottom, #f16743, #e74b36);
   box-shadow: 0 2px 3px 0 #ab5948;
   color: #fefefe;
@@ -1142,11 +1155,13 @@ h2 {
 }
 
 .product__btn:hover {
+  background: -webkit-linear-gradient(top, #f58669, #ed705e);
   background: linear-gradient(to bottom, #f58669, #ed705e);
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .product__btn:active {
+  background: -webkit-linear-gradient(bottom, #f16743, #e74b36);
   background: linear-gradient(to top, #f16743, #e74b36);
   box-shadow: inset 0 2px 2px #ac1000;
 }
@@ -1342,6 +1357,7 @@ h2 {
   padding-left: 20px;
   width: 330px;
   color: #323232;
+  vertical-align: top;
 }
 
 .news__random-link:hover,
@@ -1386,6 +1402,7 @@ h2 {
 .news__email {
   position: relative;
   display: inline-block;
+  vertical-align: top;
 }
 
 .news__email-input {
@@ -1465,6 +1482,7 @@ h2 {
   border: none;
   border-radius: 50px;
   background: #ec583c;
+  background: -webkit-linear-gradient(top, #f16743, #e74b36);
   background: linear-gradient(to bottom, #f16743, #e74b36);
   box-shadow: 0 2px 2px 0 #ab5948;
   color: #fefefe;
@@ -1478,11 +1496,13 @@ h2 {
 }
 
 .news__submit:hover {
+  background: -webkit-linear-gradient(top, #f58669, #ed705e);
   background: linear-gradient(to bottom, #f58669, #ed705e);
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .news__submit:active {
+  background: -webkit-linear-gradient(bottom, #f16743, #e74b36);
   background: linear-gradient(to top, #f16743, #e74b36);
   box-shadow: inset 0 2px 2px #ac1000;
 }
@@ -1592,15 +1612,18 @@ h2 {
 .contacts-full__btn {
   display: block;
   overflow: hidden;
+  box-sizing: border-box;
   margin-top: 24px;
   margin-bottom: 5px;
   margin-left: 0px;
-  padding: 9px 26px;
+  padding: 9px 16px;
   padding-bottom: 12px;
   padding-left: 30px;
+  width: 252px;
   border: none;
   border-radius: 50px;
   background: #ec583c;
+  background: -webkit-linear-gradient(top, #f16743, #e74b36);
   background: linear-gradient(to bottom, #f16743, #e74b36);
   box-shadow: 0 2px 3px 0 #ab5948;
   color: #fefefe;
@@ -1615,11 +1638,13 @@ h2 {
 }
 
 .contacts-full__btn:hover {
+  background: -webkit-linear-gradient(top, #f58669, #ed705e);
   background: linear-gradient(to bottom, #f58669, #ed705e);
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .contacts-full__btn:active {
+  background: -webkit-linear-gradient(bottom, #f16743, #e74b36);
   background: linear-gradient(to top, #f16743, #e74b36);
   box-shadow: inset 0 2px 2px #ac1000;
 }
@@ -1717,7 +1742,7 @@ h2 {
   margin-top: 12px;
   margin-right: 50px;
   margin-left: 155px;
-  max-width: 335px;
+  max-width: 355px;
   border: none;
 }
 
@@ -1733,7 +1758,7 @@ h2 {
 
 .more-info table {
   margin-top: 2px;
-  max-width: 335px;
+  max-width: 355px;
   border-spacing: 0;
   vertical-align: top;
 }
@@ -1843,7 +1868,13 @@ h2 {
 .modal-writeus__show,
 .modal-overlay__show {
   display: block;
+  -webkit-animation: show 1.5s;
   animation: show 1.5s;
+}
+
+@-webkit-keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes show {
@@ -1852,13 +1883,20 @@ h2 {
 }
 
 .modal-writeus__error {
+  -webkit-animation: shake 1s;
   animation: shake 1s;
 }
 
+@-webkit-keyframes shake {
+  0%, 100%                { -webkit-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { -webkit-transform: translateX(10px); transform: translateX(10px); }
+}
+
 @keyframes shake {
-  0%, 100%                { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-  20%, 40%, 60%, 80%      { transform: translateX(10px); }
+  0%, 100%                { -webkit-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { -webkit-transform: translateX(10px); transform: translateX(10px); }
 }
 
 .modal-overlay {
@@ -1899,10 +1937,12 @@ h2 {
 }
 
 .modal-writeus__close::before {
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .modal-writeus__close::after {
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -2038,6 +2078,7 @@ h2 {
   border: none;
   border-radius: 50px;
   background: #ec583c;
+  background: -webkit-linear-gradient(top, #f16743, #e74b36);
   background: linear-gradient(to bottom, #f16743, #e74b36);
   box-shadow: 0 2px 2px 0 #e74b36;
   color: #fff;
@@ -2050,12 +2091,14 @@ h2 {
 
 .modal-writeus__btn:hover {
   outline: none;
+  background: -webkit-linear-gradient(top, #f58669, #ed705e);
   background: linear-gradient(to bottom, #f58669, #ed705e);
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .modal-writeus__btn:active {
   outline: none;
+  background: -webkit-linear-gradient(bottom, #f16743, #e74b36);
   background: linear-gradient(to top, #f16743, #e74b36);
   box-shadow: inset 0 2px 2px #ac1000;
 }
@@ -2238,7 +2281,7 @@ h2 {
 .sorting__select select {
   position: relative;
   padding: 7px 12px;
-  width: 215px;
+  width: 225px;
   border: none;
   border-radius: 20px;
   background-color: #a9bab0;
@@ -2256,9 +2299,8 @@ h2 {
   cursor: pointer;
 }
 
-.sorting__select option:hover {
-  background-color: #323232;
-  cursor: pointer;
+.sorting__select option {
+  color: #323232;
 }
 
 .sorting__select options {
@@ -2277,7 +2319,7 @@ h2 {
   padding: 0;
   width: 54px;
   border: none;
-  background-color: inherit;
+  background-color: transparent;
   color: #fff;
   vertical-align: top;
   font-weight: 500;
@@ -2291,7 +2333,7 @@ h2 {
   padding: 0;
   width: 54px;
   border: none;
-  background-color: inherit;
+  background-color: transparent;
   color: #fff;
   font-weight: 500;
   font-size: 14px;
@@ -2552,6 +2594,7 @@ h2 {
 .pagination__item {
   position: relative;
   display: inline-block;
+  vertical-align: top;
 }
 
 .pagination__link {
@@ -2609,6 +2652,7 @@ h2 {
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   font-size: 0;
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -2619,6 +2663,7 @@ h2 {
   border-left: 2px solid rgba(255, 255, 255, 0.2);
   font-size: 0;
   cursor: default;
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -2627,6 +2672,7 @@ h2 {
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
   font-size: 0;
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
