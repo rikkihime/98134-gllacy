@@ -295,9 +295,11 @@
 
         <div class="contacts-full">
 
-          <div class="contacts-full__map"></div>
+          <div class="contacts-full__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104365163!2d30.320894615809475!3d59.938794181876176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463135198631" allowfullscreen></iframe>
+          </div>
 
-          <div class="contacts-full__info-wrap">
+          
             <div class="contacts-full__info">
               <div class="contacts-full__address">
                 <p>Адрес главного офиса и
@@ -312,7 +314,7 @@
               </div>
               <a class="contacts-full__btn" href="write-us.html">Форма обратной связи</a>
             </div>
-          </div>
+          
 
         </div>
 
@@ -371,15 +373,15 @@
 
         <form class="modal-writeus__form" action="/echo" method="post">
           <div class="modal-writeus__name">
-            <input class="modal-writeus__name-input" type="text" name="modal-writeus__name" id="modal-writeus__name" required>
+            <input class="modal-writeus__name-input" type="text" name="modal-writeus__name" id="modal-writeus__name">
             <label class="modal-writeus__name-label" for="modal-writeus__name">Как вас зовут?</label>
           </div>
           <div class="modal-writeus__email">
-            <input class="modal-writeus__email-input" type="email" name="modal-writeus__email" id="modal-writeus__email" required>
+            <input class="modal-writeus__email-input" type="email" name="modal-writeus__email" id="modal-writeus__email">
             <label class="modal-writeus__email-label" for="modal-writeus__email">Ваша почта для ответа?</label>
           </div>
           <div class="modal-writeus__text">
-            <textarea class="modal-writeus__textarea" name="modal-writeus__text" id="modal-writeus__text" cols="30" rows="5" required></textarea>
+            <textarea class="modal-writeus__textarea" name="modal-writeus__text" id="modal-writeus__text" cols="30" rows="5"></textarea>
             <label class="modal-writeus__textarea-label" for="modal-writeus__text">Напишите что-нибудь...</label>
           </div>
           <input class="modal-writeus__btn" type="submit" name="modal-writeus__submit" value="Отправить">
